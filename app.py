@@ -1,3 +1,9 @@
+#
+# * S-Name:		mailru-downloader
+# * Author:		Sflashy#7643 - sflashy@mail.com
+# * Date:		01/08/2021
+#
+
 import sys, zipfile, re, datetime, os
 try:
     import requests

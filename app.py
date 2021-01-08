@@ -28,7 +28,7 @@ class MailRu():
             fileSize += sizes['size']
         print(f'#\n# Folder:  {fileName}\n# Size:    {int((fileSize/1024)/1024)}MB\n#')
         jsonResponse = self.session.get(f'https://cloud.mail.ru/api/v2/zip?weblink_list=["{self.weblink}"]&name={fileName}')
-        print(f'{str(datetime.datetime.now())[:-7]} INFO Downloading {fileName}.zip')
+        print(f'{str(datetime.datetime.now())[:-7]} INFO Downloading: {fileName}.zip')
         _file = jsonResponse.json()['body']
         if not os.path.exists('./downloads'):
             os.mkdir('./downloads')

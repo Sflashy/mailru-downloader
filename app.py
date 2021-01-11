@@ -9,7 +9,7 @@ try:
     import requests
 except:
     os.system('pip install requests')
-    sys.exit(f'{str(datetime.datetime.now())[:-7]} INFO INFO Please run the it again!')
+    sys.exit(f'{str(datetime.datetime.now())[:-7]} INFO Please run the it again!')
 
 
 class MailRu():
